@@ -45,7 +45,7 @@ public class Calculate {
 
             double parseFactor() {
                 if (eat('+')) return parseFactor(); // unary plus
-                if (eat('-')) return -parseFactor(); // unary minus
+//                if (eat('-')) return -parseFactor(); // unary minus
 
                 double x;
                 int startPos = this.pos;
