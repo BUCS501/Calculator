@@ -6,10 +6,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     private TextView tvAnswer;
+    private TextView tvEquation;
     private Button num0;
     private Button num1;
     private Button num2;
@@ -34,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        tvEquation = (TextView) findViewById(R.id.tvEquation);
         tvAnswer = (TextView) findViewById(R.id.tvAnswer);
         num0 = (Button) findViewById(R.id.num0);
         num1 = (Button) findViewById(R.id.num1);
@@ -58,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 screen = screen + num0.getText().toString();
-                tvAnswer.setText(screen);
+                tvEquation.setText(screen);
             }
         });
 
@@ -66,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 screen = screen + num1.getText().toString();
-                tvAnswer.setText(screen);
+                tvEquation.setText(screen);
             }
         });
 
@@ -74,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 screen = screen + num2.getText().toString();
-                tvAnswer.setText(screen);
+                tvEquation.setText(screen);
             }
         });
 
@@ -82,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 screen = screen + num3.getText().toString();
-                tvAnswer.setText(screen);
+                tvEquation.setText(screen);
             }
         });
 
@@ -90,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 screen = screen + num4.getText().toString();
-                tvAnswer.setText(screen);
+                tvEquation.setText(screen);
             }
         });
 
@@ -98,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 screen = screen + num5.getText().toString();
-                tvAnswer.setText(screen);
+                tvEquation.setText(screen);
             }
         });
 
@@ -106,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 screen = screen + num6.getText().toString();
-                tvAnswer.setText(screen);
+                tvEquation.setText(screen);
             }
         });
 
@@ -114,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 screen = screen + num7.getText().toString();
-                tvAnswer.setText(screen);
+                tvEquation.setText(screen);
             }
         });
 
@@ -122,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 screen = screen + num8.getText().toString();
-                tvAnswer.setText(screen);
+                tvEquation.setText(screen);
             }
         });
 
@@ -130,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 screen = screen + num9.getText().toString();
-                tvAnswer.setText(screen);
+                tvEquation.setText(screen);
             }
         });
 
@@ -138,7 +141,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 screen = screen + Dec.getText().toString();
-                tvAnswer.setText(screen);
+                tvEquation.setText(screen);
             }
         });
 
@@ -146,7 +149,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 screen = screen + Add.getText().toString();
-                tvAnswer.setText(screen);
+                tvEquation.setText(screen);
             }
         });
 
@@ -154,7 +157,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 screen = screen + Sub.getText().toString();
-                tvAnswer.setText(screen);
+                tvEquation.setText(screen);
             }
         });
 
@@ -162,7 +165,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 screen = screen + Mul.getText().toString();
-                tvAnswer.setText(screen);
+                tvEquation.setText(screen);
             }
         });
 
@@ -170,7 +173,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 screen = screen + Div.getText().toString();
-                tvAnswer.setText(screen);
+                tvEquation.setText(screen);
             }
         });
 
@@ -178,15 +181,28 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 screen = screen + Sqrt.getText().toString();
-                tvAnswer.setText(screen);
+                tvEquation.setText(screen);
             }
         });
 
         eq.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                screen = screen + eq.getText().toString();
-                tvAnswer.setText(screen);
+                if (screen == "") {
+                    Toast.makeText(MainActivity.this, "Please enter proper equation to evaluate", Toast.LENGTH_SHORT).show();
+                }
+                String input = screen;
+                if (screen.endsWith("+") || screen.endsWith("-") || screen.endsWith("*") || screen.endsWith("/") || screen.endsWith("sqrt")){
+
+                    Toast.makeText(MainActivity.this, "Please enter proper equation to evaluate", Toast.LENGTH_SHORT).show();
+
+                }
+
+                Double answer = Calculate.eval(screen);
+                screen = "";
+                tvEquation.setText(screen);
+                tvAnswer.setText(answer.toString());
+
             }
         });
 

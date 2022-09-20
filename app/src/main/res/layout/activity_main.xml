@@ -16,7 +16,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/Dec"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/tvAnswer"
+        app:layout_constraintStart_toStartOf="@+id/tvEquation"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.611" />
 
@@ -27,7 +27,7 @@
         android:layout_marginEnd="4dp"
         android:text="sqrt"
         app:layout_constraintBottom_toTopOf="@+id/eq"
-        app:layout_constraintEnd_toEndOf="@+id/tvAnswer"
+        app:layout_constraintEnd_toEndOf="@+id/tvEquation"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -40,7 +40,7 @@
         android:layout_marginEnd="4dp"
         android:text="="
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/tvAnswer"
+        app:layout_constraintEnd_toEndOf="@+id/tvEquation"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -69,7 +69,7 @@
         app:layout_constraintBottom_toTopOf="@+id/num0"
         app:layout_constraintEnd_toStartOf="@+id/num8"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/tvAnswer"
+        app:layout_constraintStart_toStartOf="@+id/tvEquation"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.939" />
 
@@ -108,7 +108,7 @@
         android:layout_marginBottom="8dp"
         android:text="/"
         app:layout_constraintBottom_toTopOf="@+id/Sqrt"
-        app:layout_constraintEnd_toEndOf="@+id/tvAnswer"
+        app:layout_constraintEnd_toEndOf="@+id/tvEquation"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Mul"
@@ -156,7 +156,7 @@
         app:layout_constraintBottom_toTopOf="@+id/num7"
         app:layout_constraintEnd_toStartOf="@+id/num5"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/tvAnswer"
+        app:layout_constraintStart_toStartOf="@+id/tvEquation"
         app:layout_constraintTop_toBottomOf="@+id/num1"
         app:layout_constraintVertical_bias="0.516" />
 
@@ -183,10 +183,10 @@
         android:layout_marginEnd="4dp"
         android:text="*"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/tvAnswer"
+        app:layout_constraintEnd_toEndOf="@+id/tvEquation"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/tvEquation"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
@@ -200,7 +200,7 @@
         app:layout_constraintEnd_toStartOf="@+id/num3"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/tvEquation"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
@@ -214,7 +214,7 @@
         app:layout_constraintEnd_toStartOf="@+id/Add"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/tvEquation"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
@@ -228,7 +228,7 @@
         app:layout_constraintEnd_toStartOf="@+id/Mul"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/tvEquation"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
@@ -241,12 +241,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/num2"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/tvAnswer"
-        app:layout_constraintTop_toBottomOf="@+id/tvAnswer"
+        app:layout_constraintStart_toStartOf="@+id/tvEquation"
+        app:layout_constraintTop_toBottomOf="@+id/tvEquation"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/tvAnswer"
+        android:id="@+id/tvEquation"
         android:layout_width="316dp"
         android:layout_height="67dp"
         android:text="0.0"
@@ -257,5 +257,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.164" />
+
+    <TextView
+        android:id="@+id/tvAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.864"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.247" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
