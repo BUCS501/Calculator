@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/num0"
+        android:layout_width="114dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="16dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Dec"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvAnswer"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.611" />
+
+    <Button
+        android:id="@+id/Sqrt"
+        android:layout_width="114dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="4dp"
+        android:text="sqrt"
+        app:layout_constraintBottom_toTopOf="@+id/eq"
+        app:layout_constraintEnd_toEndOf="@+id/tvAnswer"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.942" />
+
+    <Button
+        android:id="@+id/eq"
+        android:layout_width="114dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="4dp"
+        android:text="="
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tvAnswer"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.611" />
+
+    <Button
+        android:id="@+id/num8"
+        android:layout_width="49dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="16dp"
+        android:text="8"
+        app:layout_constraintBottom_toTopOf="@+id/num0"
+        app:layout_constraintEnd_toStartOf="@+id/num9"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.939" />
+
+    <Button
+        android:id="@+id/num7"
+        android:layout_width="49dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="16dp"
+        android:text="7"
+        app:layout_constraintBottom_toTopOf="@+id/num0"
+        app:layout_constraintEnd_toStartOf="@+id/num8"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvAnswer"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.939" />
+
+    <Button
+        android:id="@+id/Dec"
+        android:layout_width="49dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="16dp"
+        android:text="."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/eq"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.611" />
+
+    <Button
+        android:id="@+id/num9"
+        android:layout_width="49dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="16dp"
+        android:text="9"
+        app:layout_constraintBottom_toTopOf="@+id/Dec"
+        app:layout_constraintEnd_toStartOf="@+id/Sqrt"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.942" />
+
+    <Button
+        android:id="@+id/Div"
+        android:layout_width="49dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="8dp"
+        android:text="/"
+        app:layout_constraintBottom_toTopOf="@+id/Sqrt"
+        app:layout_constraintEnd_toEndOf="@+id/tvAnswer"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Mul"
+        app:layout_constraintVertical_bias="0.519" />
+
+    <Button
+        android:id="@+id/num5"
+        android:layout_width="49dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="5"
+        app:layout_constraintBottom_toTopOf="@+id/num8"
+        app:layout_constraintEnd_toStartOf="@+id/num6"
+        app:layout_constraintHorizontal_bias="0.982"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num2"
+        app:layout_constraintVertical_bias="0.519" />
+
+    <Button
+        android:id="@+id/num6"
+        android:layout_width="49dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="6"
+        app:layout_constraintBottom_toTopOf="@+id/num9"
+        app:layout_constraintEnd_toStartOf="@+id/Sub"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num3"
+        app:layout_constraintVertical_bias="0.519" />
+
+    <Button
+        android:id="@+id/num4"
+        android:layout_width="49dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="4"
+        app:layout_constraintBottom_toTopOf="@+id/num7"
+        app:layout_constraintEnd_toStartOf="@+id/num5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/num1"
+        app:layout_constraintVertical_bias="0.516" />
+
+    <Button
+        android:id="@+id/Sub"
+        android:layout_width="49dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="-"
+        app:layout_constraintBottom_toTopOf="@+id/Sqrt"
+        app:layout_constraintEnd_toStartOf="@+id/Div"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Add"
+        app:layout_constraintVertical_bias="0.519" />
+
+    <Button
+        android:id="@+id/Mul"
+        android:layout_width="49dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="4dp"
+        android:text="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tvAnswer"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAnswer"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/num2"
+        android:layout_width="49dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="16dp"
+        android:text="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/num3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAnswer"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/num3"
+        android:layout_width="49dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="16dp"
+        android:text="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Add"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAnswer"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/Add"
+        android:layout_width="49dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="16dp"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Mul"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAnswer"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/num1"
+        android:layout_width="49dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="52dp"
+        android:text="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/num2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/tvAnswer"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvAnswer"
+        android:layout_width="316dp"
+        android:layout_height="67dp"
+        android:text="0.0"
+        android:ems="20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
