@@ -3,6 +3,7 @@ package com.example.cs501_calculator;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     private Button Div;
     private Button Sqrt;
     private Button eq;
+    private String screen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,8 +52,143 @@ public class MainActivity extends AppCompatActivity {
         Div = (Button) findViewById(R.id.Div);
         Sqrt = (Button) findViewById(R.id.Sqrt);
         eq = (Button) findViewById(R.id.eq);
+        screen = "";
 
+        num0.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                screen = screen + num0.getText().toString();
+                tvAnswer.setText(screen);
+            }
+        });
 
+        num1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                screen = screen + num1.getText().toString();
+                tvAnswer.setText(screen);
+            }
+        });
+
+        num2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                screen = screen + num2.getText().toString();
+                tvAnswer.setText(screen);
+            }
+        });
+
+        num3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                screen = screen + num3.getText().toString();
+                tvAnswer.setText(screen);
+            }
+        });
+
+        num4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                screen = screen + num4.getText().toString();
+                tvAnswer.setText(screen);
+            }
+        });
+
+        num5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                screen = screen + num5.getText().toString();
+                tvAnswer.setText(screen);
+            }
+        });
+
+        num6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                screen = screen + num6.getText().toString();
+                tvAnswer.setText(screen);
+            }
+        });
+
+        num7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                screen = screen + num7.getText().toString();
+                tvAnswer.setText(screen);
+            }
+        });
+
+        num8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                screen = screen + num8.getText().toString();
+                tvAnswer.setText(screen);
+            }
+        });
+
+        num9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                screen = screen + num9.getText().toString();
+                tvAnswer.setText(screen);
+            }
+        });
+
+        Dec.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                screen = screen + Dec.getText().toString();
+                tvAnswer.setText(screen);
+            }
+        });
+
+        Add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                screen = screen + Add.getText().toString();
+                tvAnswer.setText(screen);
+            }
+        });
+
+        Sub.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                screen = screen + Sub.getText().toString();
+                tvAnswer.setText(screen);
+            }
+        });
+
+        Mul.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                screen = screen + Mul.getText().toString();
+                tvAnswer.setText(screen);
+            }
+        });
+
+        Div.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                screen = screen + Div.getText().toString();
+                tvAnswer.setText(screen);
+            }
+        });
+
+        Sqrt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                screen = screen + Sqrt.getText().toString();
+                tvAnswer.setText(screen);
+            }
+        });
+
+        eq.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                screen = screen + eq.getText().toString();
+                tvAnswer.setText(screen);
+            }
+        });
 
     }
 }
