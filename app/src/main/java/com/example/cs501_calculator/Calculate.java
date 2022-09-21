@@ -1,5 +1,7 @@
 package com.example.cs501_calculator;
 
+import android.widget.Toast;
+
 public class Calculate {
 
     public static double eval(final String str) {
@@ -57,7 +59,9 @@ public class Calculate {
                     String func = str.substring(startPos, this.pos);
                     x = parseFactor();
                     if (func.equals("sqrt")) x = Math.sqrt(x);
-                    else throw new RuntimeException("Unknown function");
+                    else {
+                        throw new RuntimeException("Unexpected");
+                    }
                 } else {
                     throw new RuntimeException("Unexpected");
                 }
