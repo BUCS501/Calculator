@@ -197,11 +197,15 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Please enter proper equation to evaluate", Toast.LENGTH_SHORT).show();
 
                 }
+                if (screen.endsWith("/0")){
+                    Toast.makeText(MainActivity.this, "Cannot divided by 0", Toast.LENGTH_SHORT).show();
+                }
 
                 Double answer = Calculate.eval(screen);
                 screen = "";
                 tvEquation.setText(screen);
                 tvAnswer.setText(answer.toString());
+
 
             }
         });
